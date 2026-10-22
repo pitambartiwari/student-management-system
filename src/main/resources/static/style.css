@@ -1,0 +1,221 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f2fe, #f1f5f9);
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    color: #1d4ed8;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.container > p {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+/* Form and table cards */
+.form-section,
+.table-section {
+    background-color: #ffffff;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e2e8f0;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+    color: #0f172a;
+    font-size: 22px;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #334155;
+}
+
+input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #1e293b;
+    background-color: #ffffff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+/* Buttons */
+button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Cancel button */
+#cancelButton {
+    background-color: #64748b;
+}
+
+#cancelButton:hover {
+    background-color: #475569;
+}
+
+/* Student table */
+.table-section {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 15px 14px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+tbody tr {
+    transition: background-color 0.2s;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Edit and Delete buttons inside table */
+td button {
+    padding: 8px 12px;
+    margin: 3px;
+    font-size: 13px;
+}
+
+td button:last-child {
+    background-color: #dc2626;
+}
+
+td button:last-child:hover {
+    background-color: #b91c1c;
+}
+
+/* Student count */
+#studentCount {
+    color: #2563eb;
+    font-weight: 700;
+}
+
+/* Status messages */
+#statusMessage {
+    margin: 15px 0;
+    padding: 12px 15px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .form-section,
+    .table-section {
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    th,
+    td {
+        padding: 11px 10px;
+    }
+}

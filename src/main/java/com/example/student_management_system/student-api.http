@@ -1,0 +1,30 @@
+### add a student
+
+POST http://localhost:8080/api/students
+Content-Type: application/json
+
+{
+    "name": "Pitambar",
+    "course": "CSE",
+    "role": "Java Backend Developer"
+}
+
+### Get all students
+GET http://localhost:8080/api/students
+
+
+### Update student
+PUT http://localhost:8080/api/students/1
+Content-Type: application/json
+
+{
+    "name": "Pitambar Tiwari",
+    "course": "CSE",
+    "role": "Java Backend Developer"
+}
+
+### Delete student
+Delete http://localhost:8080/api/students/1 
+
+### Verify remaining students
+GET http;//localhost:8080/api/students 
